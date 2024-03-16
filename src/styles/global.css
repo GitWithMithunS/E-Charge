@@ -54,7 +54,6 @@
     height: 800px;
     left: 20%;
     top: 5%;
-  
     background: rgba(149, 66, 232, 0.35);
     filter: blur(175px);
     transform: rotate(-114.2deg);
@@ -66,7 +65,6 @@
     height: 100vh;
     left: 30%;
     top: 10%;
-  
     background: rgba(45, 72, 152, 0.75);
     filter: blur(200px);
     transform: rotate(-53.13deg);
@@ -86,7 +84,6 @@
     height: 316px;
     left: 0px;
     top: 0px;
-  
     background: #8d39a3;
     filter: blur(175px);
   }
@@ -97,9 +94,11 @@
     height: 100px;
     left: 37%;
     bottom: 0;
-  
     background: #65c4fa;
     filter: blur(150px);
+  }
+  p{
+    color: rgb(146, 148, 186);
   }
   
   

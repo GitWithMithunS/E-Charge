@@ -1,23 +1,11 @@
-// import React from 'react'
-// import './Navbar.css'
-
-// export const Navbar = () => {
-//   return (
-//   <>
-  
-//     <div>Navbar</div>
-//     <nav>
-
-//     </nav>
-//   </>
-//   )
-// }
-
-
-
 import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
+import logo_charger from './logo_charge.png'
+import './Navbar.css'
+import { motion } from 'framer-motion'
+import styles from '../../styles/index'
+import {navVariants}  from '../../utils/motion'
 
 const navigation = [
   { name: 'Dashboard', href: '#', current: true },
@@ -32,7 +20,13 @@ function classNames(...classes) {
 
 export default function Example() {
   return (
-    <Disclosure as="nav" className="bg-gray-600">
+    <motion.nav
+    variants={navVariants}
+    initial="hidden"
+    whileInView="show"
+    className={`${styles.xPaddings} py-8 relative`}
+  >
+    <Disclosure as="nav" className="bg">
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
@@ -52,8 +46,9 @@ export default function Example() {
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                 <div className="flex flex-shrink-0 items-center">
                   <img
-                    className="h-8 w-auto"
-                    src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
+                    className="h-8 w-auto logoimg"
+                    // src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
+                    src={logo_charger}
                     alt="Your Company"
                   />
                 </div>
@@ -176,5 +171,6 @@ export default function Example() {
         </>
       )}
     </Disclosure>
+    </motion.nav>
   )
 }

@@ -5,6 +5,8 @@ import { TitleText, TypingText } from "../custom/CustomText";
 import styles from "../../styles";
 import { staggerContainer } from "../../utils/motion";
 import { exploreWorlds } from "../../constant/index";
+import ExploreCard from "../custom/ExploreCard";
+
 
 const Explore = () => {
   const [active, setActive] = useState("world-2");
@@ -29,7 +31,7 @@ const Explore = () => {
         />
 
         <div className="mt-[50px] flex lg:flex-row flex-col min-h-[70vh] gap-5">
-          {/* {exploreWorlds.map((world, index) => (
+          {exploreWorlds.map((world, index) => (
             <ExploreCard
               key={world.id}
               {...world}
@@ -37,7 +39,7 @@ const Explore = () => {
               active={active}
               handleClick={setActive}
             />
-          ))} */}
+          ))}
         </div>
       </motion.div>
     </section>

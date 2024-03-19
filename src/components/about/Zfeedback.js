@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import styles from "../../styles";
 import { staggerContainer, fadeIn, zoomIn } from "../../utils/motion";
 import stamp from "../images/stamp.png";
+import img1 from '../../components/images/im1.jpg'
 
 const Zfeedback = () => {
   return (
@@ -29,11 +30,11 @@ const Zfeedback = () => {
           </div>
 
           <p className="mt-[24px] font-normal sm:text-[24px] text-[18px] sm:leading-[45.6px] leading-[39.6px] text-white">
-            “With increasing growth in EV-vehicles over the years.
-            E-Charge will be very useful for in the scenario, as it creates a centralized
+            “With increasing growth in EV's over the years.
+            E-Charge will be very useful in this scenario, as it creates a centralized
             platform that aggregates information on official charging
-            stations,residential partnerships and diverse charging
-            options(hotels and restaurants) in a user-friendly interface.”
+            stations and diverse charging
+            options with residential partnerships in a user-friendly interface.”
           </p>
         </motion.div>
 
@@ -42,7 +43,7 @@ const Zfeedback = () => {
           className="relative flex-1 flex justify-center items-center"
         >
           <img
-            src="/planet-09.png"
+            src={img1}
             alt="planet-09"
             className="w-full lg:h-[610px] h-auto min-h-[210px] object-cover rounded-[40px]"
           />

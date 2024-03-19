@@ -6,6 +6,8 @@ import {staggerContainer, fadeIn, planetVariants } from "../../utils/motion";
 import StartSteps from '../custom/StartSteps'
 import { newFeatures } from '../../constant';
 import NewFeatures from '../custom/NewFeatures';
+import img20 from '../images/img20.png'
+import img_main from '../images/img_main.png'
 
 
 const WhatsNew = () => {
@@ -36,9 +38,10 @@ const WhatsNew = () => {
         className={`flex-1 ${styles.flexCenter}`}
       >
         <img
-          src=""
+          src={img20}
           alt="get-started"
           className="w-[90%] h-[90%] object-contain"
+          style={{ width:"50rem" }}
         />
       </motion.div>
     </motion.div>

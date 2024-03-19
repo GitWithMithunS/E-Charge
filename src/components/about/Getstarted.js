@@ -5,6 +5,8 @@ import styles from "../../styles";
 import {staggerContainer, fadeIn, planetVariants } from "../../utils/motion";
 import StartSteps from '../custom/StartSteps'
 import {startingFeatures} from '../../constant/index'
+import img18 from '../images/IMG18.png'
+import img19 from '../images/img19.png'
 
 
 const Getstarted = () => {
@@ -22,9 +24,10 @@ const Getstarted = () => {
         className={`flex-1 ${styles.flexCenter}`}
       >
         <img
-          src=""
+          src={img19}
           alt="get-started"
           className="w-[90%] h-[90%] object-contain"
+          style={{ height: "50rem" }}
         />
       </motion.div>
       <motion.div

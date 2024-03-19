@@ -10,8 +10,8 @@ import {navVariants}  from '../../utils/motion'
 const navigation = [
   { name: 'Dashboard', href: '#', current: true },
   { name: 'Team', href: '#', current: false },
-  { name: 'Projects', href: '#', current: false },
-  { name: 'Calendar', href: '#', current: false },
+  { name: 'E-Station', href: '#', current: false },
+  { name: 'Power-share', href: '#', current: false },
 ]
 
 function classNames(...classes) {
